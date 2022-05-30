@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+
+/* Navbar */
+#navbar {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 30px;
+}
+
+.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/*-- Header --*/
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./images2/4.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header-content {
+   margin-bottom: 150px;
+   color: white;
+   text-align: center;
+}
+
+.header-content h2 {
+   font-size: 4vmin;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.ctn {
+    padding: 8px 15px;
+    background: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+/* Events */
+
+#events {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 70px auto;
+}
+
+#events .row {
+    margin-top: 50px;
+}
+
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: black;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col img {
+    width: 80%;
+}
+
+
+h4 {
+    font-size: 3vmin;
+    color:black;
+    margin: 20px auto;
+}
+
+p {
+    color: #7c7c7c;
+    padding: 0px 40px;
+
+}
+
+#events .ctn {
+    margin-top: 20px;
+}
+
+/*-- Aside --*/
+
+aside {
+    border-left: 2px solid black;
+    padding: 200px 0;
+}
+
+aside .nav-links{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+aside li a {
+    color: rgb(95, 13, 95);
+}
+
+/*-- Explore --*/
+
+#explore {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./images2/1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.explore-content {
+    margin-left: 260px;
+    width:60%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.explore-content h1 {
+    font-size: 7vmin;
+    margin: 50px;
+    color: rgb(17, 13, 13);
+}
+
+.explore-content .line {
+    margin-bottom: 50px;
+}
+
+.explore-content p {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.explore-content .ctn {
+    margin-top: 40px;
+}
+
+.ctn-1 {
+    margin-top: 200px;
+    padding: 8px 15px;
+    background: rgb(12, 8, 53);
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+/*-- Footer --*/
+
+footer {
+    width: 100%;
+    height: 100px;
+    padding: 30px 10px;
+    margin: 0;
+    background: rgb(7, 5, 27);
+    text-align: center;
+}
+
+footer p {
+    color: white;
+}
+
+.make-me-bigger {
+    height: 340px;
+}
+
+.col a {
+    margin-top: 20px;
+}
+
+/* Mobile */
+
+@media (max-width: 992px) {
+
+    #navbar {
+        padding: 0;
+    }
+
+    header{
+        background-position: center;
+    }
+
+    .logo {
+        margin: 100px 150px;
+        align-items: center;
+        font-size: 30px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row .col {
+        margin: 20px auto;
+    }
+
+    .col img {
+        max-width: 90%;
+    }
+
+     aside {
+        display: none;
+    }
+
+    .explore-content {
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    .explore-content h1{
+        font-size: 25px;
+        margin-top: 90px;
+        margin-bottom: -1px;
+    }
+
+    .ctn-1 {
+        display: none;
+    }
+}
